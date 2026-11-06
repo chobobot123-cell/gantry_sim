@@ -1,0 +1,497 @@
+{
+  "method": "decoupled (gantry path first, then arm 6-axis)",
+  "gun": "off",
+  "phi_w_deg": -90.0,
+  "rdes": 0.9,
+  "urdf": "/home/jhin/gantry_sim/planner/paint_cell_collision_rfender.urdf",
+  "home_arm": "90,-90,90,0,0,0",
+  "transit": "line",
+  "j3_min_deg": 12.0,
+  "j5_min_deg": 15.0,
+  "posture": "",
+  "ends": "avg",
+  "hops": "lane",
+  "phi_max_deg": 60.0,
+  "center_back_m": 0.0,
+  "start_branches_tried": [
+    {
+      "sig": null,
+      "ok": true
+    }
+  ],
+  "status": "planned (edges not certified)",
+  "metrics": {
+    "coverage": "307/307",
+    "branch_signatures": [
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "branch_constant": true,
+    "max_joint_step_in_row_deg": 7.881931721435191,
+    "max_joint_step_in_transit_deg": 6.539472111774553,
+    "max_j4_j6_step_deg": 7.881931721435191,
+    "max_gantry_step_in_row_mm": 53.52781468678217,
+    "max_node_pos_err_mm": 0.019310451365881394,
+    "max_node_ang_err_deg": 0.0011388498194668743,
+    "min_node_clearance_mm": 19.845803324319668,
+    "R_min": 0.851041809685105,
+    "R_med": 0.935467755271457,
+    "j5_min_deg": 16.37210802404449,
+    "wrist_sign_changes": 0,
+    "elbow_sign_changes": 0,
+    "j3_min_deg": 13.230117951797112,
+    "home_gantry": [
+      3.781161,
+      1.862
+    ],
+    "hop_line_deviation_mm": [
+      [
+        1,
+        102,
+        0.0
+      ],
+      [
+        2,
+        59,
+        0.0
+      ],
+      [
+        3,
+        151,
+        0.0
+      ],
+      [
+        4,
+        64,
+        0.0
+      ],
+      [
+        5,
+        54,
+        0.0
+      ],
+      [
+        6,
+        60,
+        0.0
+      ],
+      [
+        7,
+        127,
+        0.0
+      ],
+      [
+        8,
+        60,
+        0.0
+      ],
+      [
+        9,
+        75,
+        0.0
+      ],
+      [
+        10,
+        57,
+        0.0
+      ],
+      [
+        11,
+        63,
+        0.0
+      ],
+      [
+        12,
+        55,
+        0.0
+      ],
+      [
+        13,
+        53,
+        0.0
+      ],
+      [
+        14,
+        53,
+        0.0
+      ],
+      [
+        15,
+        58,
+        0.0
+      ],
+      [
+        16,
+        59,
+        0.0
+      ],
+      [
+        17,
+        84,
+        0.0
+      ],
+      [
+        18,
+        65,
+        0.0
+      ]
+    ],
+    "max_hop_line_deviation_mm": 0.0,
+    "arm_joint_travel_rad": 102.20363150595279,
+    "nodes": 535,
+    "inserted": 16,
+    "interp_max_mm": 0.9699641081243946,
+    "interp_max_deg": 0.12318975309212667,
+    "elbow_above_wrist_percent": 28.368794326241137,
+    "gantry_reversals_in_rows": 0,
+    "gantry_back_travel_max_m": 0.020275196745200397,
+    "gantry_travel_in_rows_m": 7.416006046605116,
+    "gantry_reversals_per_row": {
+      "0": [
+        0,
+        0.0
+      ],
+      "1": [
+        0,
+        0.0
+      ],
+      "2": [
+        0,
+        0.0
+      ],
+      "3": [
+        0,
+        0.008
+      ],
+      "4": [
+        0,
+        0.0
+      ],
+      "5": [
+        0,
+        0.02
+      ],
+      "6": [
+        0,
+        0.0
+      ],
+      "7": [
+        0,
+        0.001
+      ],
+      "8": [
+        0,
+        0.0
+      ],
+      "9": [
+        0,
+        0.0
+      ],
+      "10": [
+        0,
+        0.0
+      ],
+      "11": [
+        0,
+        0.0
+      ],
+      "12": [
+        0,
+        0.0
+      ],
+      "13": [
+        0,
+        0.0
+      ],
+      "14": [
+        0,
+        0.0
+      ],
+      "15": [
+        0,
+        0.0
+      ],
+      "16": [
+        0,
+        0.0
+      ],
+      "17": [
+        0,
+        0.0
+      ],
+      "18": [
+        0,
+        0.0
+      ]
+    },
+    "arm_reach_max_m": 1.0688611690007523,
+    "arm_reach_mean_m": 0.9485080460497346,
+    "arm_reach_over_1m_percent": 14.184397163120568,
+    "certified_lower_bound_mm": null,
+    "certified_clearance_lower_bound_mm": null,
+    "uncertified_edges": null,
+    "edges_certified": false,
+    "cycle_time_s": 76.88031858717726,
+    "hop_variants": [
+      null,
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ]
+    ],
+    "arm_ik_solves": 1448,
+    "gantry_local_repairs": 2
+  },
+  "row_hints": {
+    "0": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": null
+    },
+    "1": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "2": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "3": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "4": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "5": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "6": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "7": {
+      "phi": -75.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "8": {
+      "phi": -60.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "9": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "10": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "11": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "12": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "13": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "14": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "15": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "16": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "17": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "18": {
+      "phi": -45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    }
+  },
+  "used_prior": false,
+  "timing_s": {
+    "load": 3.187973877999866,
+    "chain": 0.691311530999883,
+    "refine": 0.08733543599964833,
+    "home": 1.203867654000078,
+    "certify(parallel)": 6.525300022985903e-05,
+    "planning_total": 1.982579873999839
+  },
+  "tool_state": {
+    "gun_lift": 0.0,
+    "gun_swing": 0.0
+  },
+  "urdf_sha256": "88c2a4a084656cdd19ebe5377049c31a1de81c6e03132e3e86078f7cc510a35a",
+  "csv_sha256": "2c141285cac1e86246cf3cc821aa11b7db57e3e39da49e662839ec3cfb4eb642",
+  "csv": "/home/jhin/gantry_sim/NX350h_right_fender/painting_trajectory.csv",
+  "workpiece": "rfender",
+  "axis_lock": false,
+  "gantry_vmax": 0.5,
+  "gantry_per_axis": true,
+  "gantry_amax": 1.0,
+  "tcp_speed": 0.5,
+  "collision_exclusions": [],
+  "trajectory_sha256": "58fc5b5cefcdc34f68d37f9591dab1aa8e758470f5615cf82c855541bb2e6984",
+  "time_scaling": {
+    "factor": 1.1616522600010688,
+    "pre_scale_peak_xy_m_s": 0.5808261300005344,
+    "post_scale_peak_xy_m_s": 0.5,
+    "meaning": "global uniform time scaling; XY velocity checked per linear interpolation segment"
+  }
+}

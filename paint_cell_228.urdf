@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="paint_cell_8axis">
+  <material name="cell_rail"><color rgba="0.55 0.57 0.60 1.0" /></material><material name="cell_frame"><color rgba="0.25 0.27 0.30 1.0" /></material><material name="black">
+    <color rgba="0.0 0.0 0.0 1.0" />
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0" />
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.4 0.0 1.0" />
+  </material>
+  <material name="dr_gray">
+    <color rgba="0.490 0.490 0.486 1.0" />
+  </material>
+  <material name="dr_white">
+    <color rgba="0.941 0.941 0.941 1.0" />
+  </material>
+  <material name="dr_blue">
+    <color rgba="0 0 0.15 1" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <mass value="3.635" />
+      <origin xyz="4e-06   -0.001016     0.08181" />
+      <inertia ixx="0.02216" ixy="5.8001e-06" ixz="6.1941e-06" iyy="0.024835" iyz="-5.3034e-05" izz="0.021063" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_0_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_0_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_1" type="revolute">
+    <parent link="base_link" />
+    <child link="link_1" />
+    <origin rpy="0 0 0" xyz="0 0 0.195" />
+    <axis xyz="0 0 1" />
+    <limit effort="411" lower="-6.2832" upper="6.2832" velocity="3.1416" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_1">
+    <inertial>
+      <mass value="7.863" />
+      <origin xyz="4.4e-05    0.029982    -0.01112" />
+      <inertia ixx="0.045839" ixy="1.2759e-05" ixz="-3.6168e-05" iyy="0.032913" iyz="-0.0029965" izz="0.044399" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_1_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_1_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_1_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_1_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_1_2.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_1_2.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_2" type="revolute">
+    <parent link="link_1" />
+    <child link="link_2" />
+    <origin rpy="0 -1.571 -1.571" xyz="0 0.039 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="411" lower="-6.2832" upper="6.2832" velocity="3.1416" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_2">
+    <inertial>
+      <mass value="10.985" />
+      <origin xyz="0.19748    0.001426     0.13191" />
+      <inertia ixx="0.04446" ixy="-0.0049948" ixz="-0.010992" iyy="0.67642" iyz="-2.8483e-05" izz="0.67428" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_2_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_2_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_2_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_2_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_2_2.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_2_2.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_3" type="revolute">
+    <parent link="link_2" />
+    <child link="link_3" />
+    <origin rpy="0 0 1.571" xyz="0.56 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="194" lower="-2.7925" upper="2.7925" velocity="3.1416" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_3">
+    <inertial>
+      <mass value="2.881" />
+      <origin xyz="8.5e-05   -0.002513    0.032058" />
+      <inertia ixx="0.012756" ixy="-5.4257e-06" ixz="1.6402e-05" iyy="0.011416" iyz="-0.0001989" izz="0.0080652" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_3_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_3_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_3_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_3_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_4" type="revolute">
+    <parent link="link_3" />
+    <child link="link_4" />
+    <origin rpy="1.571 0 0" xyz="0 -0.516 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="50" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_4">
+    <inertial>
+      <mass value="3.273" />
+      <origin xyz="-9.6e-05    0.085314    -0.13975" />
+      <inertia ixx="0.12246" ixy="2.3905e-05" ixz="2.5022e-05" iyy="0.11307" iyz="-0.027995" izz="0.017186" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_4_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_4_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_4_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_4_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_5" type="revolute">
+    <parent link="link_4" />
+    <child link="link_5" />
+    <origin rpy="-1.571 0 0" xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="50" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_5">
+    <inertial>
+      <mass value="2.141" />
+      <origin xyz="0.000109   -0.003286     0.01477" />
+      <inertia ixx="0.013145" ixy="-4.7132e-06" ixz="8.5804e-06" iyy="0.0073072" iyz="-5.999e-05" izz="0.0090476" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_5_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_5_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_5_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_5_1.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  
+  <joint name="joint_6" type="revolute">
+    <parent link="link_5" />
+    <child link="link_6" />
+    <origin rpy="1.571 0 0" xyz="0 -0.124 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="50" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+    <dynamics friction="0" />
+  </joint>
+  <link name="link_6">
+    <inertial>
+      <mass value="0.784" />
+      <origin xyz="-1.9e-05      -6e-06    -0.05227" />
+      <inertia ixx="0.0067403" ixy="5.2373e-06" ixz="2.4957e-06" iyy="0.0048015" iyz="8.3671e-06" izz="0.0059696" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_collision/A0912_6_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://dsr_description2/meshes/a0912_white/A0912_6_0.dae" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+<link name="world_base"><visual><origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000" /><geometry><mesh filename="file:///home/jhin/gantry_sim/meshes/gantry_fixed.stl" /></geometry><material name="cell_frame" /></visual></link><link name="gantry_x_link"><inertial><mass value="1.0" /><origin xyz="0.000000 0.000000 0.000000" rpy="0.0 -0.0 3.141592653589793" /><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" /></inertial><visual><origin xyz="-0.092671 -0.000000 0.000000" rpy="0.0 -0.0 3.141592653589793" /><geometry><mesh filename="file:///home/jhin/gantry_sim/meshes/gantry_bridge.stl" /></geometry><material name="cell_frame" /></visual></link><link name="gantry_y_link"><inertial><mass value="1.0" /><origin xyz="0.000000 0.000000 0.000000" rpy="0.0 -0.0 3.141592653589793" /><inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" /></inertial><visual><origin xyz="-0.092671 -0.000000 0.000000" rpy="0.0 -0.0 3.141592653589793" /><geometry><mesh filename="file:///home/jhin/gantry_sim/meshes/gantry_carriage.stl" /></geometry><material name="cell_frame" /></visual></link><joint name="gantry_x" type="prismatic"><parent link="world_base" /><child link="gantry_x_link" /><origin xyz="0.000000 0.000000 2.799300" rpy="0.000000 0.000000 0.000000" /><axis xyz="1 0 0" /><limit effort="2000" lower="-3.461161" upper="3.781161" velocity="0.5" /></joint><joint name="gantry_y" type="prismatic"><parent link="gantry_x_link" /><child link="gantry_y_link" /><origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 0.000000 0.000000" /><axis xyz="0 1 0" /><limit effort="2000" lower="-1.862000" upper="1.862000" velocity="0.5" /></joint><joint name="gantry_to_arm" type="fixed"><parent link="gantry_y_link" /><child link="base_link" /><origin xyz="-0.312587 0.000001 -0.152500" rpy="-3.141592307179587 -0.0 1.5707966535897933" /></joint>
+  
+  <link name="bumper_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///home/jhin/gantry_sim/ES300h_front_bumper.ply" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="3.63684 1.40343 -1.05500" rpy="0 0 0" />
+      <geometry>
+        <box size="0.71869 1.86186 0.81500" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="world_base-bumper" type="fixed">
+    <parent link="world_base" />
+    <child link="bumper_link" />
+    <origin xyz="-5.836840 -1.403430 2.969640" rpy="0.0 -0.0 0.0" />
+  </joint>
+
+  
+  <material name="gun_metal"><color rgba="0.62 0.65 0.68 1.0" /></material>
+  <material name="gun_rod">  <color rgba="0.72 0.74 0.76 1.0" /></material>
+  <material name="gun_body"> <color rgba="0.55 0.58 0.62 1.0" /></material>
+  <material name="gun_green"><color rgba="0.28 0.58 0.38 1.0" /></material>
+  <material name="nozzle_red"><color rgba="1.0 0.1 0.1 1.0" /></material>
+
+  <joint name="link_6-gun" type="fixed">
+    <parent link="link_6" /><child link="gun_base_link" />
+    <origin xyz="0 0 0" rpy="3.14159265 0 0" />
+  </joint>
+  <link name="gun_base_link">
+    <visual><origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://spraygun_description/meshes/base_link.stl" /></geometry>
+      <material name="gun_metal" /></visual>
+  </link>
+
+  <joint name="gun_lift" type="prismatic">
+    <parent link="gun_base_link" /><child link="gun_lift_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" /><axis xyz="0 0 -1" />
+    <limit effort="120.0" lower="0.0" upper="0.0736" velocity="0.5" />
+  </joint>
+  <link name="gun_lift_link">
+    <visual><origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://spraygun_description/meshes/lift_link.stl" /></geometry>
+      <material name="gun_rod" /></visual>
+  </link>
+
+  <joint name="gun_swing" type="revolute">
+    <parent link="gun_lift_link" /><child link="gun_body_link" />
+    <origin xyz="0.001000 -0.014180 -0.172900" rpy="0 0 0" /><axis xyz="0 1 0" />
+    <limit effort="40.0" lower="0.0" upper="1.27897" velocity="3.0" />
+    <mimic joint="gun_lift" multiplier="17.3773" offset="0.0" />
+  </joint>
+  <link name="gun_body_link">
+    <visual><origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://spraygun_description/meshes/gun_link.stl" /></geometry>
+      <material name="gun_body" /></visual>
+  </link>
+
+  <joint name="gun_body-scan" type="fixed">
+    <parent link="gun_body_link" /><child link="gun_scan" />
+    <origin xyz="0.057000 -0.060000 -0.024500" rpy="3.14159265 0 0" />
+  </joint>
+  <link name="gun_scan">
+    <visual>
+      <origin xyz="-0.368229173 -0.309305677 -0.199873362" rpy="-1.010014830 -0.196594290 -0.830630470" />
+      <geometry><mesh filename="package://spraygun_description/meshes/0518.stl" scale="0.001 0.001 0.001" /></geometry>
+      <material name="gun_green" />
+    </visual>
+  </link>
+
+  <joint name="gun_body-nozzle" type="fixed">
+    <parent link="gun_body_link" /><child link="gun_nozzle" />
+    <origin xyz="0.027020 -0.054396 -0.127583" rpy="3.1415927 0.0000000 1.5707963" />
+  </joint>
+  <link name="gun_nozzle">
+    <visual><geometry><sphere radius="0.008" /></geometry><material name="nozzle_red" /></visual>
+  </link>
+</robot>

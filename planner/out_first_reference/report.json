@@ -1,0 +1,39 @@
+{
+  "description": "fixed reference posture; optimize arm z and orientation, then compute gantry XY; no collision checking",
+  "reference": "existing row 6 first path point (paint OFF)",
+  "reference_q_deg": [
+    38.33249306893589,
+    -44.65485080733675,
+    55.69582015841509,
+    -40.07335415595015,
+    71.59117626573608,
+    97.2062182367728
+  ],
+  "row": 6,
+  "point_index": 3,
+  "csv_idx": 373,
+  "target_world_m": [
+    -2.2393400858306887,
+    -1.0711763472295754,
+    1.5252237682788872
+  ],
+  "gantry_xy_m": [
+    -1.6993800867519022,
+    -1.0994901344750219
+  ],
+  "q_deg": [
+    38.974416691980146,
+    -61.01150351005232,
+    64.91552949143228,
+    -39.451794903912116,
+    77.0865614716403,
+    92.53423982632094
+  ],
+  "position_error_mm": 1.8931523146124335e-09,
+  "orientation_error_deg": 1.0569228683877584e-10,
+  "arm_deviation_deg_norm": 20.133756989026978,
+  "elapsed_s": 0.004402434002258815,
+  "iterations": 9,
+  "valid": true,
+  "optimizer_message": "Optimization terminated successfully"
+}

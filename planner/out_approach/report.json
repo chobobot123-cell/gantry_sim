@@ -1,0 +1,60 @@
+{
+  "method": "gantry trapezoid with a quintic arm fold during travel",
+  "video_reference": "/home/jhin/비디오/Screencasts/Screencast from 10-31-2026 02:03:40 PM.webm",
+  "source_of_final_pose": "/home/jhin/gantry_sim/planner/out_gun_off_231_speed/trajectory_bumper.npz",
+  "scene": "paint_cell_231.urdf",
+  "target_row": 0,
+  "target_csv_index": 3,
+  "duration_s": 12.370499152427993,
+  "gantry_xy_speed_limit_m_s": 0.5,
+  "gantry_xy_peak_segment_speed_m_s": 0.5000000000000523,
+  "assumed_gantry_acceleration_m_s2": 1.0,
+  "gantry_start_m": [
+    3.781161,
+    1.862
+  ],
+  "gantry_end_m": [
+    -2.1540870457327466,
+    1.8577376562745096
+  ],
+  "initial_arm_deg": [
+    -171.72762312994297,
+    10.0,
+    -20.0,
+    -7.930643396070985,
+    29.999999999999996,
+    -91.8350504917747
+  ],
+  "final_arm_deg": [
+    -171.72762312994297,
+    77.4202846112614,
+    -90.36041381774523,
+    -7.930643396070985,
+    86.42874804895848,
+    -91.8350504917747
+  ],
+  "arm_fold_start_travel_fraction": 0.0,
+  "arm_fold_end_travel_fraction": 0.45,
+  "arm_fold_start_s": 0.0,
+  "arm_fold_end_s": 5.591724618592597,
+  "max_arm_velocity_deg_s": 24.696666134689057,
+  "max_arm_acceleration_deg_s2": 14.23595246462194,
+  "tcp_start_m": [
+    3.466172031598273,
+    1.6502451397289761,
+    1.017594461155449
+  ],
+  "tcp_end_m": [
+    -2.5393407135519803,
+    1.010130787362648,
+    1.7730595746185867
+  ],
+  "tcp_height_range_m": [
+    1.017594461155449,
+    1.7730595746185867
+  ],
+  "spray": "OFF throughout approach and final hold",
+  "collision_checked": false,
+  "physical_controller_validated": false,
+  "note": "Video-inspired sequence, not measured reconstruction. Start arm pose is new. Original full painting plan unchanged."
+}

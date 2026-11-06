@@ -1,0 +1,438 @@
+{
+  "method": "decoupled (gantry path first, then arm 6-axis)",
+  "gun": "off",
+  "phi_w_deg": 90.0,
+  "rdes": 0.9,
+  "urdf": "/home/jhin/gantry_sim/planner/paint_cell_collision_trunk.urdf",
+  "home_arm": "90,-90,90,0,0,0",
+  "transit": "line",
+  "j3_min_deg": 12.0,
+  "j5_min_deg": 15.0,
+  "posture": "photo",
+  "ends": "avg",
+  "hops": "lane",
+  "phi_max_deg": 60.0,
+  "center_back_m": 0.0,
+  "start_branches_tried": [
+    {
+      "sig": [
+        -1,
+        1,
+        1
+      ],
+      "ok": true
+    }
+  ],
+  "status": "planned (edges not certified)",
+  "metrics": {
+    "coverage": "643/643",
+    "branch_signatures": [
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "branch_constant": true,
+    "max_joint_step_in_row_deg": 7.982147039480814,
+    "max_joint_step_in_transit_deg": 7.221432097980864,
+    "max_j4_j6_step_deg": 7.982147039480814,
+    "max_gantry_step_in_row_mm": 57.41195142084305,
+    "max_node_pos_err_mm": 0.019547030532500058,
+    "max_node_ang_err_deg": 0.0011394747021818959,
+    "min_node_clearance_mm": 19.999981141645716,
+    "R_min": 0.8555763288183732,
+    "R_med": 0.9306035387472488,
+    "j5_min_deg": 15.040254003999301,
+    "wrist_sign_changes": 0,
+    "elbow_sign_changes": 0,
+    "j3_min_deg": 22.671134695114663,
+    "home_gantry": [
+      3.781161,
+      1.862
+    ],
+    "hop_line_deviation_mm": [
+      [
+        1,
+        88,
+        0.0
+      ],
+      [
+        2,
+        64,
+        0.0
+      ],
+      [
+        3,
+        50,
+        0.0
+      ],
+      [
+        4,
+        52,
+        0.0
+      ],
+      [
+        5,
+        55,
+        0.0
+      ],
+      [
+        6,
+        51,
+        0.0
+      ],
+      [
+        7,
+        47,
+        0.0
+      ],
+      [
+        8,
+        23,
+        0.0
+      ],
+      [
+        9,
+        35,
+        0.0
+      ],
+      [
+        10,
+        59,
+        0.0
+      ],
+      [
+        11,
+        73,
+        0.0
+      ],
+      [
+        12,
+        61,
+        0.0
+      ],
+      [
+        13,
+        66,
+        0.0
+      ],
+      [
+        14,
+        76,
+        0.0
+      ],
+      [
+        15,
+        94,
+        0.0
+      ]
+    ],
+    "max_hop_line_deviation_mm": 0.0,
+    "arm_joint_travel_rad": 129.9898202899434,
+    "nodes": 933,
+    "inserted": 6,
+    "interp_max_mm": 0.997240100591187,
+    "interp_max_deg": 0.1596528757488113,
+    "elbow_above_wrist_percent": 100.0,
+    "gantry_reversals_in_rows": 10,
+    "gantry_back_travel_max_m": 0.038310650388194034,
+    "gantry_travel_in_rows_m": 24.763169922836315,
+    "gantry_reversals_per_row": {
+      "0": [
+        0,
+        0.0
+      ],
+      "1": [
+        0,
+        0.019
+      ],
+      "2": [
+        0,
+        0.0
+      ],
+      "3": [
+        1,
+        0.031
+      ],
+      "4": [
+        1,
+        0.031
+      ],
+      "5": [
+        1,
+        0.032
+      ],
+      "6": [
+        1,
+        0.032
+      ],
+      "7": [
+        1,
+        0.035
+      ],
+      "8": [
+        1,
+        0.037
+      ],
+      "9": [
+        1,
+        0.038
+      ],
+      "10": [
+        1,
+        0.037
+      ],
+      "11": [
+        1,
+        0.038
+      ],
+      "12": [
+        1,
+        0.032
+      ],
+      "13": [
+        0,
+        0.029
+      ],
+      "14": [
+        0,
+        0.0
+      ],
+      "15": [
+        0,
+        0.007
+      ]
+    },
+    "arm_reach_max_m": 1.0550242284271267,
+    "arm_reach_mean_m": 0.9377615256356628,
+    "arm_reach_over_1m_percent": 11.071428571428571,
+    "certified_lower_bound_mm": null,
+    "certified_clearance_lower_bound_mm": null,
+    "uncertified_edges": null,
+    "edges_certified": false,
+    "cycle_time_s": 106.35719624705322,
+    "hop_variants": [
+      null,
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ],
+      [
+        "line",
+        0.0
+      ]
+    ],
+    "arm_ik_solves": 2581,
+    "gantry_local_repairs": 5
+  },
+  "row_hints": {
+    "0": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": null
+    },
+    "1": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "2": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "3": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "4": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "5": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "6": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "7": {
+      "phi": 30.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "8": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "9": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "10": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "11": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "12": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "13": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "14": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    },
+    "15": {
+      "phi": 45.0,
+      "rdes": 0.9,
+      "hop": [
+        "line",
+        0.0
+      ]
+    }
+  },
+  "used_prior": false,
+  "timing_s": {
+    "load": 4.018427191000228,
+    "chain": 3.974292083000364,
+    "refine": 0.1570223500002612,
+    "home": 0.2989657319994876,
+    "certify(parallel)": 8.349899962922791e-05,
+    "planning_total": 4.430363663999742
+  },
+  "tool_state": {
+    "gun_lift": 0.0,
+    "gun_swing": 0.0
+  },
+  "urdf_sha256": "6e0eb5a49acb1d4d8471f96089ce4427c10cf0501d03c7a94cac9dd37a92f93c",
+  "csv_sha256": "0ca1f67878c94201115850686b5b0ee55f1ca40da7e35947d7a94972406185ee",
+  "csv": "/home/jhin/gantry_sim/ES300h_trunk/painting_trajectory_reordered.csv",
+  "workpiece": "trunk",
+  "axis_lock": false,
+  "gantry_vmax": 0.5,
+  "gantry_per_axis": true,
+  "gantry_amax": 1.0,
+  "tcp_speed": 0.5,
+  "collision_exclusions": [],
+  "trajectory_sha256": "88530b4bf27dcc9f06fc36f0a7c7d92c7df2269b50097544a535a89e6aadff8b",
+  "time_scaling": {
+    "factor": 1.1018753500910368,
+    "pre_scale_peak_xy_m_s": 0.5509376750455184,
+    "post_scale_peak_xy_m_s": 0.5,
+    "meaning": "global uniform time scaling; XY velocity checked per linear interpolation segment"
+  }
+}
